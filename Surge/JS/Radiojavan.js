@@ -13,13 +13,13 @@ http-response https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\
 
 
 
-https:\/\/api-rjvn\.app\/api2\/user_subscription url script-response-body NobyDa/Surge/JS/Radiojavan.js
+^https:\/\/api-rjvn\.app\/api2\/user_subscription url script-response-body NobyDa/Surge/JS/Radiojavan.js
 
 
 
 
 
-QX & Q & Surge Mitm = ap*.intsig.net,
+QX & Q & Surge Mitm = api-rjvn.app,
 */
 
 let obj = JSON.parse($response.body);
