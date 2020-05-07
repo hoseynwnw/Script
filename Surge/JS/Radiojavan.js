@@ -10,6 +10,15 @@ https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? url simple-r
 Surge4.0: [Script]
 http-response https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js
 
+
+
+
+https:\/\/api-rjvn\.app\/api2\/user_subscription
+
+
+
+
+
 QX & Q & Surge Mitm = ap*.intsig.net,
 */
 
