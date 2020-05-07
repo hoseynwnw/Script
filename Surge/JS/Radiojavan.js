@@ -14,5 +14,5 @@ QX & Q & Surge Mitm = ap*.intsig.net,
 */
 
 let obj = JSON.parse($response.body);
-obj = {"data":{"psnl_vip_property":{"expiry":"1643731200"}}};
+obj = {"success":true,"subscription":"ios_monthly","allow_sync":true};
 $done({body: JSON.stringify(obj)});
