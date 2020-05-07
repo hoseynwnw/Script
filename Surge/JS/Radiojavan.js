@@ -13,7 +13,7 @@ http-response https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\
 
 
 
-https:\/\/api-rjvn\.app\/api2\/user_subscription
+https:\/\/api-rjvn\.app\/api2\/user_subscription url script-response-body NobyDa/Surge/JS/Radiojavan.js
 
 
 
