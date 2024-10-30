@@ -1,6 +1,6 @@
 
 
-[mitm]
+[MITM]
 hostname = nobitex.ir
 hostname = exchangerate-api.com
 
