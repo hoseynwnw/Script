@@ -2,11 +2,10 @@ const usdtUrl = 'https://api.nobitex.ir/market/stats?srcCurrency=usdt'; // 获�
 const usdCnyUrl = 'https://api.exchangerate-api.com/v4/latest/USD'; // 获取美元兑人民币汇率的 API
 
 const request = () => {
-    // 获取 USDT 价格（以伊朗里尔为单位）
     let usdtPriceInRial, usdToCny;
 
     // 获取 USDT 价格
-    const usdtResponse = http.get(usdtUrl);
+    const usdtResponse = $http.get(usdtUrl);
     if (usdtResponse.status !== 200) {
         return `获取 USDT 价格失败: ${usdtResponse.status}`;
     }
@@ -14,7 +13,7 @@ const request = () => {
     usdtPriceInRial = parseFloat(usdtData.stats['usdt-rls'].latest); // 提取 "latest" 的值
 
     // 获取美元兑人民币汇率
-    const usdCnyResponse = http.get(usdCnyUrl);
+    const usdCnyResponse = $http.get(usdCnyUrl);
     if (usdCnyResponse.status !== 200) {
         return `获取美元兑人民币汇率失败: ${usdCnyResponse.status}`;
     }
