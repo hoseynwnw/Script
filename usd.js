@@ -1,6 +1,6 @@
-*/
-10.30;22:47
 /*
+10.30;22:48
+*/
 
 
 const url = 'https://api.exchangerate-api.com/v4/latest/USD'; // 替换为你选择的 API
