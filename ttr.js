@@ -1,12 +1,10 @@
-const url = "https://fx.cmbchina.com/api/v1/fx/rate";
-$httpClient.get(url, function(error, response, data) {
-    if (error) {
-        console.log('Error: ' + error);
-        return;
-    }
-    const jsonData = JSON.parse(data);
-    const body = jsonData.body;
-    const usdData = body[3]; // 假设美元汇率信息在列表中的索引为 3
-    const usdBidPrice = usdData.rtbBid;
-    console.log('美元买入价:', usdBidPrice);
-});
+const url = 'https://api.exchangerate-api.com/v4/latest/USD'; // 替换为你选择的 API
+
+const request = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    const usdToCny = data.rates.CNY; // 获取美元兑人民币的汇率
+    return `当前美元兑人民币的汇率是: ${usdToCny}`;
+};
+
+request().then(console.log).catch(console.error);
