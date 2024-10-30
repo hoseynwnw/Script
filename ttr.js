@@ -16,7 +16,7 @@ const request = async () => {
 
         // 计算 USDT 价格除以美元兑人民币汇率
         const result = usdtPriceInRial / usdToCny;
-        return `USDT 价格（伊朗里尔）: ${usdtPriceInRial}, 美元兑人民币汇率: ${usdToCny}, 计算结果: ${result}`;
+        return `USDT 价格（伊朗,里尔）: ${usdtPriceInRial}, 美元兑人民币汇率: ${usdToCny}, 计算结果: ${result}`;
     } catch (error) {
         return `发生错误: ${error.message}`;
     }
