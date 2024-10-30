@@ -1,7 +1,4 @@
 
-[mitm]
-hostname = nobitex.ir,exchangerate-api.com
-
 const usdtUrl = 'https://api.nobitex.ir/market/stats?srcCurrency=usdt'; // 获取 USDT 价格的 API
 const usdCnyUrl = 'https://api.exchangerate-api.com/v4/latest/USD'; // 获取美元兑人民币汇率的 API
 
