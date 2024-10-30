@@ -22,5 +22,4 @@ const request = async () => {
     }
 };
 
-
 request().then(console.log).catch(console.error);
